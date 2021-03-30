@@ -1,5 +1,5 @@
 import { useButtons } from '~/contexts/ButtonsContext';
-import { Creators } from '~/contexts/ButtonsContext/actions';
+import { Creators } from '~/contexts/ButtonsContext/ducks';
 
 const { decrement } = Creators;
 

@@ -2,7 +2,7 @@ import React, { createContext, useContext, useReducer } from 'react';
 
 import { Action } from '~/store/Creators/action';
 
-import { ButtonsReducer } from './reducer';
+import { ButtonsReducer } from './ducks';
 
 export interface State {
   count: number;
