@@ -1,6 +1,6 @@
 import { Action } from './action';
 
-export type Reducer = (...args: any[]) => any;
+type Reducer = (...args: any[]) => any;
 
 export const mainReducer = <State>(
   state: State,
