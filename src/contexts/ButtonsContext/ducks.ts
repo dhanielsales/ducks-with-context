@@ -1,5 +1,5 @@
-import { Action, createActions } from '~/store/Creators/action';
-import { mainReducer } from '~/store/Creators/reducer';
+import { Action, createActions } from '~/stores/Creators/action';
+import { mainReducer } from '~/stores/Creators/reducer';
 
 import { State } from './index';
 

@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useReducer } from 'react';
 
-import { Action } from '~/store/Creators/action';
+import { Action } from '~/stores/Creators/action';
 
 import { ButtonsReducer } from './ducks';
 
