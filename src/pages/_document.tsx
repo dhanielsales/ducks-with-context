@@ -5,7 +5,7 @@ class MyDocument extends Document<DocumentProps> {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/logo.png" />
+          <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"

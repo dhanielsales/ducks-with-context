@@ -2,13 +2,17 @@ import Link from 'next/link';
 import React, { useRef } from 'react';
 
 import Button from '~/components/Button';
-import { useButtons } from '~/contexts/ButtonsContext';
-import { Creators } from '~/contexts/ButtonsContext/ducks';
+import { useImmutable } from '~/contexts/ImmutableContext';
+import { Creators } from '~/contexts/ImmutableContext/ducks';
 
 const { increment, decrement, setValue } = Creators;
 
+export interface State {
+  count: number;
+}
+
 const Home: React.FC = () => {
-  const { state, dispatch } = useButtons();
+  const { state, dispatch } = useImmutable();
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleOnSubmit = (e: React.FormEvent<EventTarget>): void => {
@@ -93,14 +97,14 @@ const Home: React.FC = () => {
             </div>
           </form>
         </div>
-        <Link href="/immutable">
+        <Link href="/">
           <a
             style={{
               marginTop: '10px',
               color: '#227ba8',
             }}
           >
-            Go to <span style={{ fontWeight: 'bold' }}>Immutable</span> demo
+            Go to <span style={{ fontWeight: 'bold' }}>default javascript object</span> demo
           </a>
         </Link>
       </div>
